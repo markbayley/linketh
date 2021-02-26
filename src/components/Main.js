@@ -16,7 +16,7 @@ class Main extends Component {
           >
             <div className="content mr-auto ml-auto">
               <div id="content" className="mt-3">
-                <div className="card mb-4 bg-dark border-danger">
+                <div className="card mb-4 bg-dark border-info">
                   <div className="card-body">
                     <div>
                       <a
