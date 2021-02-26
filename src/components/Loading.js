@@ -1,4 +1,4 @@
-import dice_rolling from '../logos/dice_rolling.gif';
+import loading from '../logos/loading.gif';
 import React, { Component } from 'react';
 import eth from '../logos/eth.png';
 import './App.css';
@@ -7,9 +7,9 @@ class Loading extends Component {
 
   render() {
     return (
-      <div className="container-fluid mt-5 col-m-4" style={{ maxWidth: '550px' }}>
+      <div className="container-fluid mt-5 col-lg" >
         <div className="col-sm">
-          <main role="main" className="col-lg-12 text-monospace text-center text-white">
+          <main role="main" className="col-lg-12 text-center text-white">
             <div className="content mr-auto ml-auto">
               <div id="content" className="mt-3">
                 <div className="card mb-4 bg-dark border-danger">
@@ -20,7 +20,7 @@ class Loading extends Component {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                        <img src={dice_rolling} width="225" alt="logo" />
+                        <img src={loading} width="425" alt="logo" />
                       </a>
                     </div>
                     &nbsp;
@@ -30,7 +30,7 @@ class Loading extends Component {
                           id="disabledInput"
                           type="text"
                           className="form-control form-control-md"
-                          placeholder="rolling..."
+                          placeholder="Connecting... please wait..."
                           disabled
                         />
                         <div className="input-group-append">
