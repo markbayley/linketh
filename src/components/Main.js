@@ -26,7 +26,6 @@ class Main extends Component {
                     <p></p>
                     <div
                       className="input-group center-block"
-                      style={{ maxWidth: "400px", marginBottom: "15px" }}
                     >
                       <input
                         type="number"
