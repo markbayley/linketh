@@ -29,18 +29,18 @@ class Loading extends Component {
                       className="input-group center-block"
                     >
                       <input
-                        id="disabledInput"
+                        id="disabledinput"
                         type="text"
                         className="form-control"
                         placeholder="Connecting... please wait..."
                         disabled
                       />
-                      <div className="input-group-append">
+                      {/* <div className="input-group-append">
                         <div className="input-group-text">
                           <img src={eth} height="20" alt="" />
                           &nbsp;<b>ETH</b>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                     <button
                       type="submit"

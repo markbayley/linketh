@@ -13,10 +13,30 @@ br {
     display: flex;  
     margin-left: auto;
     margin-right: auto;
-    max-width: 400px;
+    max-width: 350px;
     padding-bottom: 35px;
 }
 
 .small-text {
   font-size: 0.8em;
+}
+
+#input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid cyan;
+    outline:none;
+    box-shadow:none;
+    font-size: 20px;
+    color: #fff;
+}
+
+#disabledinput {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid grey;
+    outline:none;
+    box-shadow:none;
+    font-size: 20px;
+    color: #fff;
 }

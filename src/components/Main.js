@@ -28,19 +28,20 @@ class Main extends Component {
                       className="input-group center-block"
                     >
                       <input
+                        id="input"
                         type="number"
                         step="0.01"
                         className="form-control"
-                        placeholder="Enter an amount of ETH here..."
+                        placeholder="Enter an amount of ETH..."
                         onChange={(e) => this.props.onChange(e.target.value)}
                         required
                       />
-                      <div className="input-group-append">
+                      {/* <div className="input-group-append">
                         <div className="input-group-text">
                           <img src={eth} height="20" alt="" />
                           &nbsp;<b>ETH</b>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                     <button
                       type="submit"
