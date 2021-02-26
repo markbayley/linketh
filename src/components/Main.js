@@ -6,14 +6,9 @@ class Main extends Component {
 
   render() {
     return (
-      <div
-        className="container-fluid mt-5 col-m-4"
-      >
+      <div className="container-fluid mt-5 col-m-4">
         <div className="col-lg">
-          <main
-            role="main"
-            className="col-lg-12 text-center text-white"
-          >
+          <main role="main" className="col-lg-12 text-center text-white">
             <div className="content mr-auto ml-auto">
               <div id="content" className="mt-3">
                 <div className="card mb-4 bg-dark border-info">
@@ -30,12 +25,13 @@ class Main extends Component {
                     &nbsp;
                     <p></p>
                     <div
-                      className="input-group mb-4"
+                      className="input-group center-block"
+                      style={{ maxWidth: "400px", marginBottom: "15px" }}
                     >
                       <input
                         type="number"
                         step="0.01"
-                        className="form-control form-control-md"
+                        className="form-control"
                         placeholder="Enter an amount of ETH here..."
                         onChange={(e) => this.props.onChange(e.target.value)}
                         required
@@ -49,7 +45,7 @@ class Main extends Component {
                     </div>
                     <button
                       type="submit"
-                      className="btn btn-outline-info btn-lg"
+                      className="btn btn-outline-info btn-xl"
                       onClick={(event) => {
                         event.preventDefault();
                         //start with digit, digit+dot* or single dot*, end with digit.
@@ -68,12 +64,12 @@ class Main extends Component {
                         }
                       }}
                     >
-                      Low
+                      HEADS
                     </button>
                     &nbsp;&nbsp;&nbsp;
                     <button
                       type="submit"
-                      className="btn btn-outline-info btn-lg"
+                      className="btn btn-outline-info btn-xl"
                       onClick={(event) => {
                         event.preventDefault();
                         //start with digit, digit+dot* or single dot*, end with digit.
@@ -92,7 +88,7 @@ class Main extends Component {
                         }
                       }}
                     >
-                      High
+                      TAILS
                     </button>
                   </div>
                   <div>
@@ -119,6 +115,18 @@ class Main extends Component {
                           )
                         ).toFixed(5)}{" "}
                         <b>ETH&nbsp;</b>
+                        <br />
+                        <br />
+                        <em className="small-text">
+                          Requires ETH and LINK test tokens
+                          <a href="https://rinkeby.chain.link/"> Click here</a>
+                          .&nbsp;
+                        </em>
+                        <br />
+                        <em className="small-text">
+                          Adapted from Dapp University.&nbsp;
+                        </em>
+                        <br />
                       </div>
                     )}
                   </div>

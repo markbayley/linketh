@@ -57,9 +57,9 @@ class App extends Component {
       this.state.contract.events.Result({}, (error, event) => {
         const verdict = event.returnValues.winAmount
         if(verdict === '0') {
-          window.alert('lose :(')
+          window.alert('SORRY, TRY AGAIN')
         } else {
-          window.alert('WIN!')
+          window.alert('You HAVE WON!')
         }
         this.setState({ loading: false })
         window.location.reload();
